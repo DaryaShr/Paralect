@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+}
+
+.statistics-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+}
