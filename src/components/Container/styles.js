@@ -6,4 +6,5 @@ export const StyledContainer = styled.div`
   background-color: #F9F9F9;
   width: 100%;
   height: 100%;
+  flex-grow: 1;
 `;

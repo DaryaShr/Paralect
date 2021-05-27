@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledProfile = styled.div`
   width: 100%;
+  height: 100%;
+  flex-grow: 1;
   display: grid;
   grid-template-columns: 30% auto;
 
