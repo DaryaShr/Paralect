@@ -9,7 +9,7 @@ const EmptyState = (props) => {
   const { type } = props;
 
   return (
-    <StyledWrapper>
+    <StyledWrapper id="empty-state">
       {
         {
           error: <UserIcon className="icon" />,

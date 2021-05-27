@@ -42,15 +42,15 @@ const List = () => {
   };
 
   return (
-    <StyledListContainer>
+    <StyledListContainer id="list-container">
       <StyledTitle>Repositories ({reposCount})</StyledTitle>
-      <StyledList>
+      <StyledList id="list">
         {repos.map((item) => (
           <ListItem data={item} key={item.id} />
         ))}
       </StyledList>
 
-      <StyledPagination>
+      <StyledPagination id="pagination-block">
         <p className="repos-count">
           {repos.length < 4 ? "" : offset < 5 ? "1-" : offset - 3 + "-"}
           {offset} of {reposCount} items

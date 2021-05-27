@@ -24,7 +24,7 @@ const Data = () => {
   };
 
   return (
-    <StyledWrapper>
+    <StyledWrapper id="data">
       <StyledPhotoWrapper>
         <StyledPhoto alt="avatar" src={user.avatar_url} />
       </StyledPhotoWrapper>

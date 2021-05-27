@@ -12,7 +12,7 @@ const Container = () => {
   const error = useSelector(errorUserSelector);
 
   return (
-    <StyledContainer>
+    <StyledContainer id="container">
       <Loader />
       {user ? <Profile /> : <EmptyState type={error ? "error" : "initial"} />}
     </StyledContainer>

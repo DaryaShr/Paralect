@@ -11,7 +11,7 @@ const Profile = () => {
   const repos = useSelector(reposLengthSelector);
 
   return (
-    <StyledProfile>
+    <StyledProfile id="profile">
       <Data />
       {Boolean(repos) ? <List /> : <EmptyState type="noRepos" />}
     </StyledProfile>
