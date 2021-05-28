@@ -13,8 +13,8 @@ const Container = () => {
 
   return (
     <StyledContainer id="container">
-      <Loader />
       {user ? <Profile /> : <EmptyState type={error ? "error" : "initial"} />}
+      <Loader type="userLoader"/>
     </StyledContainer>
   );
 };

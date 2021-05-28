@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { reposLengthSelector } from "../../redux/repos";
+import { reposTotalCountSelector } from "../../redux/repos";
 
 import { StyledProfile } from "./styles";
 
@@ -8,12 +8,12 @@ import Data from "../Data";
 import List from "../List";
 
 const Profile = () => {
-  const repos = useSelector(reposLengthSelector);
+  const reposCount = useSelector(reposTotalCountSelector);
 
   return (
     <StyledProfile id="profile">
       <Data />
-      {Boolean(repos) ? <List /> : <EmptyState type="noRepos" />}
+      {Boolean(reposCount) ? <List /> : <EmptyState type="noRepos" />}
     </StyledProfile>
   );
 };

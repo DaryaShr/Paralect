@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { getAllRepos } from "./repos"; 
+import { ACTION_SET_REPOS_COUNT } from "./repos"; 
 
 export const userSelector = (state) => state.user.user;
+export const usernameSelector = (state) => state.user.user.login;
 export const errorUserSelector = (state) => state.user.error;
 export const isFetchingUserSelector = (state) => state.user.isFetching;
 
@@ -15,7 +16,7 @@ export const getUser = (username) => async (dispatch) => {
     .then(
       (result) => {
         dispatch(ACTION_GET_USER_SUCCEED({ result }));
-        dispatch(getAllRepos(username));
+        dispatch(ACTION_SET_REPOS_COUNT({ count: result.public_repos }));
       },
       (error) => {
         dispatch(ACTION_GET_USER_FAILED({ error }));

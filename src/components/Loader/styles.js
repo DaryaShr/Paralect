@@ -6,7 +6,7 @@ export const LoaderContainer = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: ${props => props.position};
   left: 0;
   top: 0;
   background-color: #F9F9F9;
